@@ -1,0 +1,86 @@
+blueprint:
+  name: '[ROIDMI EVA] Команды для Алисы'
+  description: Привязываем комнаты к фразам для Алисы
+  domain: automation
+  source_url: https://github.com/home-assistant/core/blob/dev/homeassistant/components/automation/blueprints/motion_light.yaml
+  author: Alternativ
+  input:
+    script_target:
+      name: Скрипт уборки
+      selector:
+        entity:
+          domain: script
+          multiple: false
+    living_room_id:
+      name: ID зала
+      selector:
+        number:
+          min: 1
+          max: 4
+    bedroom_id:
+      name: ID спальни
+      selector:
+        number:
+          min: 1
+          max: 4
+    kitchen_id:
+      name: ID кухни
+      selector:
+        number:
+          min: 1
+          max: 4
+    hallway_id:
+      name: ID коридора
+      selector:
+        number:
+          min: 1
+          max: 4
+
+mode: single
+
+trigger:
+  - platform: event
+    event_type: yandex_speaker
+    event_data:
+      value: Сделай громче на 0!!!!
+    id: living_room
+  - platform: event
+    event_type: yandex_speaker
+    event_data:
+      value: Сделай громче на 0!!!
+    id: bedroom
+  - platform: event
+    event_type: yandex_speaker
+    event_data:
+      value: Сделай громче на 0!
+    id: kitchen
+  - platform: event
+    event_type: yandex_speaker
+    event_data:
+      value: Сделай громче на 0!!
+    id: hallway
+
+variables: 
+  living_room_id: !input living_room_id
+  bedroom_id: !input bedroom_id
+  kitchen_id: !input kitchen_id
+  hallway_id: !input hallway_id
+
+action:
+  - service: script.turn_on
+    entity_id: !input script_target
+    data_template:
+      variables:
+        rooms: >
+          {%- set text = '' -%}
+
+          {%- if (trigger.id == 'living_room') %}{%- set text = living_room_id | string %}{% endif %}
+
+          {%- if (trigger.id == 'bedroom') %}{%- set text = bedroom_id | string %}{% endif %}
+
+          {%- if (trigger.id == 'kitchen') %}{%- set text = kitchen_id | string %}{% endif %}
+
+          {%- if (trigger.id == 'hallway') %}{%- set text = hallway_id | string %}{% endif %}
+          
+          ['{{ text }}']
+    enabled: true

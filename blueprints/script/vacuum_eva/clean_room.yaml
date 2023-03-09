@@ -1,0 +1,39 @@
+blueprint:
+  name: '[ROIDMI EVA] Уборка комнат'
+  description: 'Запускаем уборку в выбранную комнату'
+  domain: script
+  source_url: https://github.com/home-assistant/core/blob/master/homeassistant/components/script/blueprints/confirmable_notification.yaml
+  author: Alternativ
+  input:
+    vacuum_id:
+      name: Пылесос
+      selector:
+        entity:
+          domain: vacuum
+          multiple: false
+    map_id:
+      name: "ID карты"
+      selector:
+        text:
+
+mode: single
+icon: mdi:robot-vacuum
+
+fields:
+  rooms:
+    description: Команда с номерами комнат
+    example: '[1]'
+
+variables:
+  map_id: !input map_id
+  formatted_rooms: 
+
+sequence:
+  - service: xiaomi_miot.call_action
+    data:
+      throw: true
+      entity_id: !input vacuum_id
+      siid: 14
+      aiid: 1
+      params: '[2,"{\"mapId\":{{map_id}},\"segmentId\":[{{ rooms | join(",") }}]}"]'
+     
