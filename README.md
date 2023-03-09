@@ -44,7 +44,7 @@ P.S. В пункте [Добавление карточки на главную 
 
       # ВАЖНАЯ ЧАСТЬ
       service_call_schema:
-        service: script.vacuum_eva_clean_room
+        service: script.your_script_clean_room #id-скрипта уборки комнат
         service_data:
           rooms: '[[selection]]'
       # ВАЖНАЯ ЧАСТЬ
