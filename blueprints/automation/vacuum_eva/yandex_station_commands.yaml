@@ -2,7 +2,7 @@ blueprint:
   name: '[ROIDMI EVA] Команды для Алисы'
   description: Привязываем комнаты к фразам для Алисы
   domain: automation
-  source_url: https://github.com/home-assistant/core/blob/dev/homeassistant/components/automation/blueprints/motion_light.yaml
+  source_url: https://github.com/alternativniy/ha_roidmi_eva/blob/main/blueprints/automation/vacuum_eva/yandex_station_commands.yaml
   author: Alternativ
   input:
     script_target:

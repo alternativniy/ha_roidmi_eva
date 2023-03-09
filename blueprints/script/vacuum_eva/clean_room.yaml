@@ -2,7 +2,7 @@ blueprint:
   name: '[ROIDMI EVA] Уборка комнат'
   description: 'Запускаем уборку в выбранную комнату'
   domain: script
-  source_url: https://github.com/home-assistant/core/blob/master/homeassistant/components/script/blueprints/confirmable_notification.yaml
+  source_url: https://github.com/alternativniy/ha_roidmi_eva/blob/main/blueprints/script/vacuum_eva/clean_room.yaml
   author: Alternativ
   input:
     vacuum_id:
