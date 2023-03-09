@@ -21,7 +21,7 @@ P.S. В пункте [Добавление карточки на главную 
 3. Добавляем [автоматизацию для команд Алисы](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Falternativniy%2Fha_roidmi_eva%2Fblob%2Fmain%2Fblueprints%2Fautomation%2Fvacuum_eva%2Fyandex_station_commands.yaml) и настраиваем ее, привязав к ней ранее созданный скрипт
 
     [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Falternativniy%2Fha_roidmi_eva%2Fblob%2Fmain%2Fblueprints%2Fautomation%2Fvacuum_eva%2Fyandex_station_commands.yaml)
-5. Добавляем сценарии в приложении Умный Дом от Яндекса на каждую комнату:
+4. Добавляем сценарии в приложении Умный Дом от Яндекса на каждую комнату:
     
     #### Маппинг команд по комнатам:
       - Зал - `Сделай громче на 0!!!!`
@@ -38,7 +38,7 @@ P.S. В пункте [Добавление карточки на главную 
       <img src="https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/4.jpg?raw=true" width="350" />
       <img src="https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/5.jpg?raw=true" width="350" />
     </details>   
-4. Готово. Ваша Алиса умеет работать с комнатами!
+5. Готово. Ваша Алиса умеет работать с комнатами!
 
 ## <a name="add_vacuum_card"></a>[Добавление карточки на главную панель](#add_vacuum_card)
 1. Ставим кастомный пользовательский интерфейс [Lovelace Vacuum Map card](https://github.com/PiotrMachowski/lovelace-xiaomi-vacuum-map-card) через HACS
