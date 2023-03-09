@@ -24,7 +24,11 @@ P.S. В пункте [Добавление карточки на главную 
 5. Добавляем сценарии в приложении Умный Дом от Яндекса на каждую комнату:
     <details>
       <summary>Скриншоты</summary>
-      
+      ![Screen 1](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/1.jpg?raw=true)
+      ![Screen 2](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/2.jpg?raw=true)
+      ![Screen 3](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/3.jpg?raw=true)
+      ![Screen 4](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/4.jpg?raw=true)
+      ![Screen 5](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/5.jpg?raw=true)
     </details>   
 4. Готово. Ваша Алиса умеет работать с комнатами!
 
