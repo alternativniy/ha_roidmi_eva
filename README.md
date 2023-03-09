@@ -22,13 +22,21 @@ P.S. В пункте [Добавление карточки на главную 
 
     [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Falternativniy%2Fha_roidmi_eva%2Fblob%2Fmain%2Fblueprints%2Fautomation%2Fvacuum_eva%2Fyandex_station_commands.yaml)
 5. Добавляем сценарии в приложении Умный Дом от Яндекса на каждую комнату:
+    
+    #### Маппинг команд по комнатам:
+      - Зал - `Сделай громче на 0!!!!`
+      - Спальня - `Сделай громче на 0!!!`
+      - Кордиор - `Сделай громче на 0!!`
+      - Кухня - `Сделай громче на 0!`
+
+    P.S. Соблюдение кол-ва воскл. знаков в команде обязательно!
     <details>
       <summary>Скриншоты</summary>
-      ![Screen 1](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/1.jpg?raw=true)
-      ![Screen 2](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/2.jpg?raw=true)
-      ![Screen 3](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/3.jpg?raw=true)
-      ![Screen 4](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/4.jpg?raw=true)
-      ![Screen 5](https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/5.jpg?raw=true)
+      <img src="https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/1.jpg?raw=true" width="350" />
+      <img src="https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/2.jpg?raw=true" width="350" />
+      <img src="https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/3.jpg?raw=true" width="350" />
+      <img src="https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/4.jpg?raw=true" width="350" />
+      <img src="https://github.com/alternativniy/ha_roidmi_eva/blob/main/assets/img/5.jpg?raw=true" width="350" />
     </details>   
 4. Готово. Ваша Алиса умеет работать с комнатами!
 
